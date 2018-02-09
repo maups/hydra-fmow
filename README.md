@@ -23,7 +23,7 @@ Hydra is a framework that creates ensembles of Convolutional Neural Networks (CN
 
 ## Instructions
 
-Download the [fMoW dataset](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16996&pm=14684), uncompress it and then execute the following sequence of commands:
+Download the [fMoW-rgb dataset](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16996&pm=14684), uncompress it and then execute the following sequence of commands:
 
 ```
 $ git clone https://github.com/maups/hydra-fmow
