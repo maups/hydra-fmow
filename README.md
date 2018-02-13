@@ -25,7 +25,7 @@ Hydra is a framework that creates ensembles of Convolutional Neural Networks (CN
 
 ## Instructions
 
-Download the [fMoW-rgb dataset](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16996&pm=14684) and uncompress it. To run our fMoW submission without training, execute the following sequence of commands:
+Download the [fMoW-rgb dataset](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16996&pm=14684) and uncompress it. To run our fMoW submission for a test set without running the training, execute the following sequence of commands:
 
 ```
 $ git clone https://github.com/maups/hydra-fmow
@@ -35,3 +35,15 @@ $ nvidia-docker run -v /path_to/fMoW-rgb/:/data:ro -v /path_to/your_tmp_files/:/
 keras@IMAGE-ID:/src$ ./test.sh /data/test/ output.txt
 ```
 
+To run training and testing, execute the following (make sure the paths to training and validation sets inside docker are /data/train and /data/val, respectively):
+
+```
+$ git clone https://github.com/maups/hydra-fmow
+$ cd hydra-fmow
+$ docker build -t <id> .
+$ nvidia-docker run -v /path_to/fMoW-rgb/:/data:ro -v /path_to/your_tmp_files/:/wdata -it <id> bash
+keras@IMAGE-ID:/src$ ./train.sh
+keras@IMAGE-ID:/src$ ./test.sh /data/test/ output.txt
+```
+
+You may use a different test set as long as the folder has the same file organization as the fMoW test set.
