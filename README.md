@@ -32,6 +32,6 @@ $ git clone https://github.com/maups/hydra-fmow
 $ cd hydra-fmow
 $ docker build -t <id> .
 $ nvidia-docker run -v /path_to/fMoW-rgb/:/data:ro -v /path_to/your_tmp_files/:/wdata -it <id> bash
-keras@IMAGE-ID /src/$ ./test.sh /data/test/ output.txt
+keras@IMAGE-ID:/src$ ./test.sh /data/test/ output.txt
 ```
 
