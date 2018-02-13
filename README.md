@@ -1,6 +1,6 @@
 # Hydra: an Ensemble of Convolutional Neural Networks for Geospatial Land Classification
 
-This repository releases models and code for [Hydra](http://arxiv.org/abs/1710.07662), our submission for the functional Map of the World (fMoW) challenge. This solution was ranked 3rd in the [final scoreboard](https://community.topcoder.com/longcontest/stats/?module=ViewOverview&rd=16996).
+This repository releases models and code for [Hydra](http://arxiv.org/abs/1802.03518), our submission for the functional Map of the World (fMoW) challenge. This solution was ranked 3rd in the [final scoreboard](https://community.topcoder.com/longcontest/stats/?module=ViewOverview&rd=16996).
 
 ## Authors
 
