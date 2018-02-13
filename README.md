@@ -7,7 +7,8 @@ This repository releases models and code for [Hydra](http://arxiv.org/abs/1802.0
 - Rodrigo Minetto - Universidade Tecnológica Federal do Paraná (UTFPR)
 - Mauricio Pamplona Segundo - Universidade Federal da Bahia (UFBA)
 - Sudeep Sarkar - University of South Florida (USF)
-This  research  was  conducted  while  the  authors  were  at  the Computer Vision and Pattern Recognition Group, USF.
+
+This research was conducted while the authors were at the Computer Vision and Pattern Recognition Group, USF.
 
 ## Functional Map of the World description
 
