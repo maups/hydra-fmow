@@ -4,7 +4,7 @@ This repository releases models and code for [Hydra](http://arxiv.org/abs/1802.0
 
 ## Authors
 
-- Rodrigo Minetto - Universidade Tecnlógica Federal do Paraná
+- Rodrigo Minetto - Universidade Tecnológica Federal do Paraná
 - Mauricio Pamplona Segundo - Universidade Federal da Bahia
 - Sudeep Sarkar - University of South Florida
 
