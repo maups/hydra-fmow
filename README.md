@@ -23,9 +23,13 @@ Hydra is a framework that creates ensembles of Convolutional Neural Networks (CN
 
 ## Instructions
 
-Download the [fMoW-rgb dataset](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16996&pm=14684), uncompress it and then execute the following sequence of commands:
+Download the [fMoW-rgb dataset](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16996&pm=14684) and uncompress it. To run our fMoW submission without training, execute the following sequence of commands:
 
 ```
 $ git clone https://github.com/maups/hydra-fmow
+$ cd hydra-fmow
+$ docker build -t <id> .
+$ nvidia-docker run -v /path_to/fMoW-rgb/:/data:ro -v /path_to/your_tmp_files/:/wdata -it <id> bash
+keras@IMAGE-ID /src/$ ./test.sh /data/test/ output.txt
 ```
 
