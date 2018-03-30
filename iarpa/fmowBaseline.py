@@ -114,7 +114,8 @@ class FMOWBaseline:
            print ('Error: define a dataset!')
 
         model = get_cnn_model(self.params, self.params.algorithm)
-        model = make_parallel(model, self.params.num_gpus)
+        if self.params.num_gpus > 1:
+           model = make_parallel(model, self.params.num_gpus)
         if (self.params.model_weights != ''):
            model.load_weights(self.params.model_weights, by_name=True)
         model.compile(optimizer=Adam(lr=self.params.cnn_adam_learning_rate), loss='categorical_crossentropy', metrics=['accuracy'])
@@ -202,7 +203,8 @@ class FMOWBaseline:
         metadataMax = np.array(metadataStats['metadata_max'])
 
         cnnModel = get_cnn_model(self.params, self.params.algorithm)
-        cnnModel = make_parallel(cnnModel, self.params.num_gpus)
+        if self.params.num_gpus > 1:
+           cnnModel = make_parallel(cnnModel, self.params.num_gpus)
         cnnModel.load_weights(self.params.model_weights)
         cnnModel = cnnModel.layers[-2]
      
